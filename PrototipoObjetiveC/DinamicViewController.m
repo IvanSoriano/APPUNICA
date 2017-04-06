@@ -12,6 +12,9 @@
 
 @end
 
+
+//nsjddsf
+
 @implementation DinamicViewController
 
 - (void)viewDidLoad {
