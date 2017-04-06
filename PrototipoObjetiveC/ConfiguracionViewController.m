@@ -100,9 +100,104 @@
     [self.view addSubview:mySwitch2];
     
     
+    //Creacion de label nombre BACHE 24
     
-
+    UILabel *nombre3 = [[UILabel alloc]initWithFrame:CGRectMake(15, 220, 220, 20)];
+    
+    [nombre3 setBackgroundColor:[UIColor whiteColor]];
+    
+    [nombre3 setTextColor:[UIColor blackColor]];
+    
+    [nombre3 setText:@"APP BACHE (BACHE 24)"];
+    
+    nombre3.font=[label.font fontWithSize:15];
+    
+    [[self view] addSubview:nombre3];
+    
+    
+    //switch BACHE 24
+    
+    UISwitch *mySwitch3 = [[UISwitch alloc] initWithFrame:CGRectMake(250, 220, 0, 0)];
+    
+    [mySwitch3 addTarget:self action:@selector(changeSwitch3:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch3];
+    
+    
+    
+    //Creacion de label nombre MI POLICIA
+    
+    UILabel *nombre4 = [[UILabel alloc]initWithFrame:CGRectMake(15, 270, 220, 20)];
+    
+    [nombre4 setBackgroundColor:[UIColor whiteColor]];
+    
+    [nombre4 setTextColor:[UIColor blackColor]];
+    
+    [nombre4 setText:@"APP POLICIA (MI POLICIA)"];
+    
+    nombre4.font=[label.font fontWithSize:15];
+    
+    [[self view] addSubview:nombre4];
+    
+    
+    //switchMI POLICIA
+    
+    UISwitch *mySwitch4 = [[UISwitch alloc] initWithFrame:CGRectMake(250, 270, 0, 0)];
+    
+    [mySwitch4 addTarget:self action:@selector(changeSwitch4:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch4];
+    
+    
+    
+    //Creacion de label nombre VIVE SEGURA
+    
+    UILabel *nombre5 = [[UILabel alloc]initWithFrame:CGRectMake(15, 320, 220, 20)];
+    
+    [nombre5 setBackgroundColor:[UIColor whiteColor]];
+    
+    [nombre5 setTextColor:[UIColor blackColor]];
+    
+    [nombre5 setText:@"APP MUJERES (VIVE SEGURA)"];
+    
+    nombre5.font=[label.font fontWithSize:15];
+    
+    [[self view] addSubview:nombre5];
+    
+    //switchMI VIVE SEGURA
+    
+    UISwitch *mySwitch5 = [[UISwitch alloc] initWithFrame:CGRectMake(250, 320, 0, 0)];
+    
+    [mySwitch5 addTarget:self action:@selector(changeSwitch5:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch5];
+    
+    
+    //Creacion de label nombre VIVE SEGURA
+    
+    UILabel *nombre6 = [[UILabel alloc]initWithFrame:CGRectMake(15, 320, 220, 20)];
+    
+    [nombre6 setBackgroundColor:[UIColor whiteColor]];
+    
+    [nombre6 setTextColor:[UIColor blackColor]];
+    
+    [nombre6 setText:@"APP SEGURIDAD (911)"];
+    
+    nombre6.font=[label.font fontWithSize:15];
+    
+    [[self view] addSubview:nombre6];
+    
+    //switchMI VIVE SEGURA
+    
+    UISwitch *mySwitch6 = [[UISwitch alloc] initWithFrame:CGRectMake(250, 320, 0, 0)];
+    
+    [mySwitch6 addTarget:self action:@selector(changeSwitch6:) forControlEvents:UIControlEventValueChanged];
+    [self.view addSubview:mySwitch6];
+    
+    
+    
+    
+    
 }
+
+
 - (void)changeSwitch:(id)sender{
     
     if([sender isOn]){
@@ -113,12 +208,59 @@
     
 }
 
+
+
 - (void)changeSwitch2:(id)sender{
     
     if([sender isOn]){
         NSLog(@"Switch ECOBICI is ON");
     } else{
         NSLog(@"Switch ECOBICI is OFF");
+    }
+    
+}
+
+
+- (void)changeSwitch3:(id)sender{
+    
+    if([sender isOn]){
+        NSLog(@"Switch BACHE 24 is ON");
+    } else{
+        NSLog(@"Switch BACHE 24 is OFF");
+    }
+    
+}
+
+
+
+- (void)changeSwitch4:(id)sender{
+    
+    if([sender isOn]){
+        NSLog(@"Switch MI POLICIA is ON");
+    } else{
+        NSLog(@"Switch MI POLICIA is OFF");
+    }
+    
+}
+
+
+- (void)changeSwitch5:(id)sender{
+    
+    if([sender isOn]){
+        NSLog(@"Switch VIVE SEGURA is ON");
+    } else{
+        NSLog(@"Switch VIVE SEGURA is OFF");
+    }
+    
+}
+
+
+- (void)changeSwitch6:(id)sender{
+    
+    if([sender isOn]){
+        NSLog(@"Switch 911 is ON");
+    } else{
+        NSLog(@"Switch 911 is OFF");
     }
     
 }
